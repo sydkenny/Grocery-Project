@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Grocery</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>ShowGroceryServlet</servlet-name>
+		<servlet-class>com.fdm.servlets.ShowGroceryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShowGroceryServlet</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddGroceryServlet</servlet-name>
+		<servlet-class>com.fdm.servlets.AddGroceryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddGroceryServlet</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteGroceryServlet</servlet-name>
+		<servlet-class>com.fdm.servlets.DeleteGroceryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteGroceryServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchGroceryServlet</servlet-name>
+		<servlet-class>com.fdm.servlets.SearchGroceryServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SearchGroceryServlet</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
